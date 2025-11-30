@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_chat import message
+from chatbot import RuleBot
 
 
 def run_streamlit_app(chatbot):
@@ -57,3 +58,4 @@ def run_streamlit_app(chatbot):
 
         with st.chat_message("bot"):
             st.write(output)
+run_streamlit_app(RuleBot)
